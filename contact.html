@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel = "stylesheet" type="text/css" href="style.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hanish Suresh">
+        <meta name="description" content="Your comprehensive guide to vegan tourism - discover plant-based restaurants, local cuisines, and travel tips for conscious travelers.">
+        <meta name="keywords" content="vegan tourism, plant-based travel, vegan restaurants, vegan food, sustainable travel">
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
 <body>
-    <header> 
-        <h1> <img class="imglogo" src="images/logo.png"  alt="vegan tourism"/></h1>
+    <header>
+        <h1>
+            <img class="imglogo" src="images/logo.png" alt="vegan tourism">
+        </h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Restaurants.html">Restaurants</a></li>
-                    <li><a href="vegantips.html">Vegan Tips</a></li>
-                    <li><a href="Reviews.html">Reviews</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Restaurants</a>
+                    <ul class="dropdown">
+                        <li><a href="Restaurants.html">Popular Restaurants</a></li>
+                        <li><a href="LocalCuisnes.html">Local Cuisines</a></li>
+                    </ul>
+                </li>
+                <li><a href="vegantips.html">Vegan Tips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
             <form>
-                <input type ="text" placeholder="Search for vegan-friendly restaurants...">
-                </form>
+                <input type="text" placeholder="Search for vegan-friendly restaurants...">
+            </form>
         </nav>
     </header>
 
     <section class="class">
-        <h2> We'd love to hear from you!</h2>
-        <p> if you have any questions or need assistance, feel free contact us using the form below.</p>
+        <h2>We'd love to hear from you!</h2>
+        <p>If you have any questions or need assistance, feel free to <em>contact us</em> using the form below.</p>
     </section>
 
     <section>
+        <h2>Contact Form</h2>
         <form action="submit.html" method="post" class="contactpage">
-            <label for="name"> Name:</label>
-            
-            <input type="text" id="-name" name="name" required>
-            
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" style="grid-column: span 2;" required>
-
-            <label for="subject">Phone Number:</label>
-            <input type="text" id="subject" name="subject" style="grid-column: span 2;" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Submit">
+            <fieldset>
+                <legend>Contact Information</legend>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+        
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <input type="submit" value="Submit">
+            </fieldset>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Vegan Tourism. All rights reserved.</p>
-        <p> Contact Us: +31 6 86421589 | <a href="mailto:735863@student.inholland.nl"></a>735863@student.inholland.nl</p>
-        <a href="https://www.facebook.com/Inholland/" target="_blank">facebook</a>
-        <a href="https://www.instagram.com/hogeschoolinholland/" target="_blank">instagram</a>
-        <a href="https://www.youtube.com/inholland" target="_blank">youtube</a>
+        <p>&copy; 2025 Vegan Tourism. All rights reserved.</p>
+        
+        <section>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>FAQs</h3>
+            <ul>
+                <li><a href="#">How to find vegan restaurants?</a></li>
+                <li><a href="#">Is vegan food sustainable?</a></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: info@vegantourism.nl</li>
+                <li>Phone: +31 123 456 789</li>
+            </ul>
+        </section>
     </footer>
-
 </body>
 </html>

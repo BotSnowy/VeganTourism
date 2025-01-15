@@ -1,69 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips</title>
-    <link rel = "stylesheet" type="text/css" href="style.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hanish Suresh">
+        <meta name="description" content="Your comprehensive guide to vegan tourism - discover plant-based restaurants, local cuisines, and travel tips for conscious travelers.">
+        <meta name="keywords" content="vegan tourism, plant-based travel, vegan restaurants, vegan food, sustainable travel">
+        <title>vegantips</title>
+        <link rel = "stylesheet" type="text/css" href="css/style.css"/>
+        
+    </head>
+
 <body>
-    <header> 
-        <h1> <img class="imglogo" src="images/logo.png"  alt="vegan tourism"/></h1>
+    
+    <header>
+        <h1><img class="imglogo" src="images/logo.png" alt="Vegan Tourism Logo"></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Restaurants.html">Restaurants</a></li>
-                    <li><a href="vegantips.html">Vegan Tips</a></li>
-                    <li><a href="Reviews.html">Reviews</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Restaurants</a>
+                    <ul class="dropdown">
+                        <li><a href="Restaurants.html">Popular Restaurants</a></li>
+                        <li><a href="LocalCuisnes.html">Local Cuisines</a></li>
+                    </ul>
+                </li>
+                <li><a href="vegantips.html">Vegan Tips</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
             </ul>
             <form>
-                <input type ="text" placeholder="Search for vegan-friendly restaurants...">
-                </form>
+                <input type="text" placeholder="Search for vegan-friendly restaurants...">
+            </form>
         </nav>
     </header>
 
-    <main class="vegantips">
-        <p>Traveling as a vegan can be exciting and rewarding. Here are some useful tips to help you maintain your vegan diet and enjoy a sustainable trip!</p>
+    
+    <main>
+        <section class="intro">
+            <p>Traveling as a vegan can be <em>exciting</em> and <em>rewarding</em>.</p>
+        </section>
+
+        <section class="map">
+            <figure>
+                <img src="images/map12.png" alt="Netherlands map">
+                <figcaption>Explore vegan-friendly locations across the Netherlands.</figcaption>
+            </figure>
+        </section>
+
+        <section class="tips-grid">
+            <article class="tip">
+                
+                <h3> Amsterdam</h3>
+                <p>Vegan Highlights: A bustling city with plenty of options for vegans. Enjoy creative plant-based menus at restaurants like "Vegan Junk Food Bar" or stop by "Vegabond" for a wide range of snacks and groceries.
+                    Must-Try: Vegan Dutch pancakes and Stroopwafels at local cafes.</p>
+            </article>
+            <article class="tip">
+                
+                <h3>Rotterdam</h3>
+                <p>Use apps or guides to locate vegan restaurants or eateries that offer plant-based options.</p>
+            </article>
+            <article class="tip">
+                
+                <h3>Utrecht</h3>
+                <p>Vegan Highlights: This historical city offers a cozy vibe with great vegan options like "SOY" and "Gys Utrecht."
+                    Must-Try: Vegan brunch at the canalside cafes.</p>
+            </article>
+        </section>
+
+        <aside class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <button>What is Vegan Tourism?</button>
+            <button>Can I Suggest a Vegan-Friendly Restaurant?</button>
+            <button>Do You Provide Tips for Vegan Travelers?</button>
+            <button>Is Your Website Accessible for People with Dietary Restrictions?</button>
+            <button>How Can I Contact You for Assistance?</button>
+        </aside>
+
+        <section class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.9344884569!2d5.115688815804693!3d52.090932979734056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6683b2d8ea8b5%3A0x6f1ae14c69ed3a43!2sAzi%C3%ABlaan!5e0!3m2!1sen!2snl!4v1634613931493!5m2!1sen!2snl" allowfullscreen loading="lazy"></iframe>
+        </section>
+        
     </main>
 
-    <section class="tips-grid">
-        <article class="tip">
-            <img src="plant-icon.png" alt="Tip 1 Icon">
-            <h3>Research Local Cuisine</h3>
-            <p>Explore local dishes that are naturally vegan or can be adapted to suit your diet.</p>
-        </article>
-
-        <article class="tip">
-            <img src="map-icon.png" alt="Tip 2 Icon">
-            <h3>Find Vegan-Friendly Restaurants</h3>
-            <p>Use apps or guides to locate vegan restaurants or eateries that offer plant-based options.</p>
-        </article>
-
-        <article class="tip">
-            <img src="grocery-icon.png" alt="Tip 3 Icon">
-            <h3>Carry Vegan Snacks</h3>
-            <p>Always keep a stash of snacks with you to ensure you're prepared during long journeys or in remote areas.</p>
-        </article>
-    </section>
-
-    <section class="comments">
-        <h2>Ask a Question or Leave a Tip</h2>
-        <form>
-            <label for="comment">Your Comment:</label>
-            <textarea id="comment" name="comment" rows="4" placeholder="Share your thoughts..."></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Vegan Tourism. All rights reserved.</p>
-        <p> Contact Us: +31 6 86421589 | <a href="mailto:735863@student.inholland.nl"></a>735863@student.inholland.nl</p>
-        <a href="https://www.facebook.com/Inholland/" target="_blank">facebook</a>
-        <a href="https://www.instagram.com/hogeschoolinholland/" target="_blank">instagram</a>
-        <a href="https://www.youtube.com/inholland" target="_blank">youtube</a>
-    </footer>
     
+    <footer>
+
+        <p>&copy; 2025 Vegan Tourism. All rights reserved.</p>
+        
+        <section>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>FAQs</h3>
+            <ul>
+                <li><a href="#">How to find vegan restaurants?</a></li>
+                <li><a href="#">Is vegan food sustainable?</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: info@vegantourism.nl</li>
+                <li>Phone: +31 123 456 789</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
